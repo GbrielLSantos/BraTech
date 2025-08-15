@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Bratech • Contato</title>
+  <meta name="description" content="Fale com a Bratech: solicite orçamento para front-end, tráfego pago e design." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="nav">
+  <a href="index.html" class="brand">
+    <img src="assets/logo.svg" alt="Bratech logo" />
+  </a>
+  <button class="burger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="front-end.html">Front-End</a>
+    <a href="trafego.html">Tráfego Pago</a>
+    <a href="design.html">Design Gráfico</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+  <main class="page">
+    <header class="page-head">
+      <h1>Vamos <span class="grad">conversar?</span></h1>
+      <p>Me conte sobre seu projeto e receba uma proposta em poucas horas.</p>
+    </header>
+    <section class="grid2">
+      <form class="card form" onsubmit="return sendForm(event)">
+        <label>Nome
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </label>
+        <label>E-mail
+          <input type="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </label>
+        <label>Serviço
+          <select name="servico" required>
+            <option value="Front-End">Front-End</option>
+            <option value="Tráfego Pago">Tráfego Pago</option>
+            <option value="Design Gráfico">Design Gráfico</option>
+          </select>
+        </label>
+        <label>Mensagem
+          <textarea name="mensagem" rows="5" placeholder="Descreva seu projeto"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Enviar</button>
+        <p class="muted small">*Este formulário envia um e-mail local (mailto). Para envio automático, integre com Formspree, Getform, Zapier, etc.</p>
+      </form>
+      <div class="card">
+        <h3>Contato direto</h3>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5518997696147" target="_blank" rel="noopener">(18) 99769-6147</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:gabriel9541@outlook.com">gabriel9541@outlook.com</a></p>
+        <p><strong>Redes:</strong> <a href="#" target="_blank" rel="noopener">Instagram</a> </p>
+        <p class="muted">Horário comercial: seg–sex, 9h às 18h.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.svg" alt="Bratech logo" />
+      <p>Experiências digitais que vendem e encantam.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="front-end.html">Front-End</a>
+      <a href="trafego.html">Tráfego Pago</a>
+      <a href="design.html">Design Gráfico</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div class="footer-contact">
+      <a class="btn ghost" href="https://wa.me/5518997696147" target="_blank" rel="noopener">WhatsApp (18) 99769-6147</a>
+      <a class="btn ghost" href="mailto:contato@bratech.com">E-mail</a>
+    </div>
+  </div>
+  <p class="copy">© <span id="year"></span> Bratech. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
